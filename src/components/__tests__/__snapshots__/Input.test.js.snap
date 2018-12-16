@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input should match snapshot 1`] = `
+.c0 {
+  border: 1px solid #c8d2da;
+  border-radius: 2px;
+  color: #59636b;
+  background-color: #fff;
+  font-size: 0.8125rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.6875rem;
+  padding-bottom: 0.6875rem;
+  width: 300px;
+}
+
+.c0:hover {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+.c0:focus {
+  border: 1px solid #00a5c9;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  outline: none;
+}
+
+<input
+  class="c0"
+  color="dark3"
+  font-size="xs"
+  placeholder="Search here..."
+  width="300"
+/>
+`;
