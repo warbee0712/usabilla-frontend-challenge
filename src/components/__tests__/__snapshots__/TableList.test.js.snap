@@ -1,0 +1,1100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableList Header should match snapshot 1`] = `
+.c1 {
+  grid-area: field1;
+}
+
+.c3 {
+  grid-area: field2;
+}
+
+.c4 {
+  grid-area: field3;
+}
+
+.c0 {
+  display: none;
+  padding-left: 1.4375rem;
+  padding-right: 1.4375rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  grid-auto-columns: 1fr 4fr 2fr 2fr 2fr;
+  grid-column-gap: 1rem;
+  grid-template-areas: "rating comment browser device platform";
+}
+
+.c2 {
+  font-family: Milo,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  font-size: 1rem;
+  line-height: normal;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-weight: 500;
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    display: grid;
+  }
+}
+
+<div
+  class="c0"
+  display="none,grid"
+>
+  <div
+    class="c1"
+  >
+    <p
+      class="c2"
+    >
+      field1
+    </p>
+  </div>
+  <div
+    class="c3"
+  >
+    <p
+      class="c2"
+    >
+      field2
+    </p>
+  </div>
+  <div
+    class="c4"
+  >
+    <p
+      class="c2"
+    >
+      field3
+    </p>
+  </div>
+</div>
+`;
+
+exports[`TableList Item should match snapshot 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex: 0 100px;
+  -ms-flex: 0 100px;
+  flex: 0 100px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  grid-area: rating;
+  padding-bottom: 0.6875rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  grid-area: comment;
+  padding-bottom: 0.6875rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  grid-area: browser;
+  padding-bottom: 0.6875rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  grid-area: device;
+  padding-bottom: 0.6875rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  grid-area: platform;
+  padding-bottom: 0.6875rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.c3 {
+  font-family: Milo,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  font-size: 1rem;
+  line-height: normal;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-weight: 500;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  color: #59636b;
+  border: 1px solid #59636b;
+  border-radius: 9999em;
+  -webkit-transition: color 0.2s cubic-bezier(0.38,1.59,0.82,0.96), box-shadow 0.2s cubic-bezier(0.38,1.59,0.82,0.96);
+  transition: color 0.2s cubic-bezier(0.38,1.59,0.82,0.96), box-shadow 0.2s cubic-bezier(0.38,1.59,0.82,0.96);
+  position: relative;
+  font-size: 0.8125rem;
+  height: 30px;
+  width: 30px;
+  background-color: #00a5c9;
+  border-color: #00a5c9;
+  color: #fff;
+}
+
+.c0 {
+  display: grid;
+  padding: 1.4375rem;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 1rem;
+  grid-template-areas: "rating" "comment" "browser" "device" "platform";
+  border-bottom: 1px solid #eef3f7;
+}
+
+.c6 {
+  font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.1875rem;
+}
+
+@media screen and (min-width:40em) {
+  .c2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c1 {
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c5 {
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c7 {
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c8 {
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c9 {
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    grid-auto-columns: 1fr 4fr 2fr 2fr 2fr;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    grid-template-areas: "rating comment browser device platform";
+  }
+}
+
+<div
+  class="c0"
+  data-testid="item"
+  display="grid"
+>
+  <div
+    class="c1"
+    display="flex"
+  >
+    <div
+      class="c2"
+      display="inline-flex,none"
+    >
+      <p
+        class="c3"
+      >
+        rating
+      </p>
+    </div>
+    <span
+      class="c4"
+      data-testid="item-rating"
+      font-size="xs"
+      size="30"
+    >
+      5
+    </span>
+  </div>
+  <div
+    class="c5"
+    display="flex"
+  >
+    <div
+      class="c2"
+      display="inline-flex,none"
+    >
+      <p
+        class="c3"
+      >
+        comment
+      </p>
+    </div>
+    <p
+      class="c6"
+      data-testid="item-comment"
+    >
+      belle offre de services
+    </p>
+  </div>
+  <div
+    class="c7"
+    display="flex"
+  >
+    <div
+      class="c2"
+      display="inline-flex,none"
+    >
+      <p
+        class="c3"
+      >
+        browser
+      </p>
+    </div>
+    <p
+      class="c6"
+      data-testid="item-browser"
+    >
+      Chrome 32.0
+    </p>
+  </div>
+  <div
+    class="c8"
+    display="flex"
+  >
+    <div
+      class="c2"
+      display="inline-flex,none"
+    >
+      <p
+        class="c3"
+      >
+        device
+      </p>
+    </div>
+    <p
+      class="c6"
+      data-testid="item-device"
+    >
+      Desktop
+    </p>
+  </div>
+  <div
+    class="c9"
+    display="flex"
+  >
+    <div
+      class="c2"
+      display="inline-flex,none"
+    >
+      <p
+        class="c3"
+        data-testid="item-platform"
+      >
+        platform
+      </p>
+    </div>
+    <p
+      class="c6"
+    >
+      MacOSX
+    </p>
+  </div>
+</div>
+`;
+
+exports[`TableList should match snapshot 1`] = `
+.c2 {
+  grid-area: rating;
+}
+
+.c4 {
+  grid-area: comment;
+}
+
+.c5 {
+  grid-area: browser;
+}
+
+.c6 {
+  grid-area: device;
+}
+
+.c7 {
+  grid-area: platform;
+}
+
+.c10 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex: 0 100px;
+  -ms-flex: 0 100px;
+  flex: 0 100px;
+}
+
+.c0 {
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  grid-area: rating;
+  padding-bottom: 0.6875rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  grid-area: comment;
+  padding-bottom: 0.6875rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  grid-area: browser;
+  padding-bottom: 0.6875rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  grid-area: device;
+  padding-bottom: 0.6875rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.c16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  grid-area: platform;
+  padding-bottom: 0.6875rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.c1 {
+  display: none;
+  padding-left: 1.4375rem;
+  padding-right: 1.4375rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  grid-auto-columns: 1fr 4fr 2fr 2fr 2fr;
+  grid-column-gap: 1rem;
+  grid-template-areas: "rating comment browser device platform";
+}
+
+.c3 {
+  font-family: Milo,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  font-size: 1rem;
+  line-height: normal;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-weight: 500;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  color: #59636b;
+  border: 1px solid #59636b;
+  border-radius: 9999em;
+  -webkit-transition: color 0.2s cubic-bezier(0.38,1.59,0.82,0.96), box-shadow 0.2s cubic-bezier(0.38,1.59,0.82,0.96);
+  transition: color 0.2s cubic-bezier(0.38,1.59,0.82,0.96), box-shadow 0.2s cubic-bezier(0.38,1.59,0.82,0.96);
+  position: relative;
+  font-size: 0.8125rem;
+  height: 30px;
+  width: 30px;
+  background-color: #00a5c9;
+  border-color: #00a5c9;
+  color: #fff;
+}
+
+.c8 {
+  display: grid;
+  padding: 1.4375rem;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 1rem;
+  grid-template-areas: "rating" "comment" "browser" "device" "platform";
+  border-bottom: 1px solid #eef3f7;
+}
+
+.c13 {
+  font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.1875rem;
+}
+
+@media screen and (min-width:40em) {
+  .c10 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c9 {
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c12 {
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c14 {
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c15 {
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c16 {
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c1 {
+    display: grid;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c8 {
+    grid-auto-columns: 1fr 4fr 2fr 2fr 2fr;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c8 {
+    grid-template-areas: "rating comment browser device platform";
+  }
+}
+
+<div
+  class="c0"
+  data-testid="table-list"
+  display="flex"
+>
+  <div
+    class="c1"
+    display="none,grid"
+  >
+    <div
+      class="c2"
+    >
+      <p
+        class="c3"
+      >
+        rating
+      </p>
+    </div>
+    <div
+      class="c4"
+    >
+      <p
+        class="c3"
+      >
+        comment
+      </p>
+    </div>
+    <div
+      class="c5"
+    >
+      <p
+        class="c3"
+      >
+        browser
+      </p>
+    </div>
+    <div
+      class="c6"
+    >
+      <p
+        class="c3"
+      >
+        device
+      </p>
+    </div>
+    <div
+      class="c7"
+    >
+      <p
+        class="c3"
+      >
+        platform
+      </p>
+    </div>
+  </div>
+  <div
+    class="c8"
+    data-testid="item"
+    display="grid"
+  >
+    <div
+      class="c9"
+      display="flex"
+    >
+      <div
+        class="c10"
+        display="inline-flex,none"
+      >
+        <p
+          class="c3"
+        >
+          rating
+        </p>
+      </div>
+      <span
+        class="c11"
+        data-testid="item-rating"
+        font-size="xs"
+        size="30"
+      >
+        5
+      </span>
+    </div>
+    <div
+      class="c12"
+      display="flex"
+    >
+      <div
+        class="c10"
+        display="inline-flex,none"
+      >
+        <p
+          class="c3"
+        >
+          comment
+        </p>
+      </div>
+      <p
+        class="c13"
+        data-testid="item-comment"
+      >
+        belle offre de services
+      </p>
+    </div>
+    <div
+      class="c14"
+      display="flex"
+    >
+      <div
+        class="c10"
+        display="inline-flex,none"
+      >
+        <p
+          class="c3"
+        >
+          browser
+        </p>
+      </div>
+      <p
+        class="c13"
+        data-testid="item-browser"
+      >
+        Chrome 32.0
+      </p>
+    </div>
+    <div
+      class="c15"
+      display="flex"
+    >
+      <div
+        class="c10"
+        display="inline-flex,none"
+      >
+        <p
+          class="c3"
+        >
+          device
+        </p>
+      </div>
+      <p
+        class="c13"
+        data-testid="item-device"
+      >
+        Desktop
+      </p>
+    </div>
+    <div
+      class="c16"
+      display="flex"
+    >
+      <div
+        class="c10"
+        display="inline-flex,none"
+      >
+        <p
+          class="c3"
+          data-testid="item-platform"
+        >
+          platform
+        </p>
+      </div>
+      <p
+        class="c13"
+      >
+        MacOSX
+      </p>
+    </div>
+  </div>
+  <div
+    class="c8"
+    data-testid="item"
+    display="grid"
+  >
+    <div
+      class="c9"
+      display="flex"
+    >
+      <div
+        class="c10"
+        display="inline-flex,none"
+      >
+        <p
+          class="c3"
+        >
+          rating
+        </p>
+      </div>
+      <span
+        class="c11"
+        data-testid="item-rating"
+        font-size="xs"
+        size="30"
+      >
+        2
+      </span>
+    </div>
+    <div
+      class="c12"
+      display="flex"
+    >
+      <div
+        class="c10"
+        display="inline-flex,none"
+      >
+        <p
+          class="c3"
+        >
+          comment
+        </p>
+      </div>
+      <p
+        class="c13"
+        data-testid="item-comment"
+      >
+        bouton ne fonctionne pas
+      </p>
+    </div>
+    <div
+      class="c14"
+      display="flex"
+    >
+      <div
+        class="c10"
+        display="inline-flex,none"
+      >
+        <p
+          class="c3"
+        >
+          browser
+        </p>
+      </div>
+      <p
+        class="c13"
+        data-testid="item-browser"
+      >
+        Chrome 32.0
+      </p>
+    </div>
+    <div
+      class="c15"
+      display="flex"
+    >
+      <div
+        class="c10"
+        display="inline-flex,none"
+      >
+        <p
+          class="c3"
+        >
+          device
+        </p>
+      </div>
+      <p
+        class="c13"
+        data-testid="item-device"
+      >
+        Desktop
+      </p>
+    </div>
+    <div
+      class="c16"
+      display="flex"
+    >
+      <div
+        class="c10"
+        display="inline-flex,none"
+      >
+        <p
+          class="c3"
+          data-testid="item-platform"
+        >
+          platform
+        </p>
+      </div>
+      <p
+        class="c13"
+      >
+        MacOSX
+      </p>
+    </div>
+  </div>
+  <div
+    class="c8"
+    data-testid="item"
+    display="grid"
+  >
+    <div
+      class="c9"
+      display="flex"
+    >
+      <div
+        class="c10"
+        display="inline-flex,none"
+      >
+        <p
+          class="c3"
+        >
+          rating
+        </p>
+      </div>
+      <span
+        class="c11"
+        data-testid="item-rating"
+        font-size="xs"
+        size="30"
+      >
+        4
+      </span>
+    </div>
+    <div
+      class="c12"
+      display="flex"
+    >
+      <div
+        class="c10"
+        display="inline-flex,none"
+      >
+        <p
+          class="c3"
+        >
+          comment
+        </p>
+      </div>
+      <p
+        class="c13"
+        data-testid="item-comment"
+      >
+        new layout awesome
+      </p>
+    </div>
+    <div
+      class="c14"
+      display="flex"
+    >
+      <div
+        class="c10"
+        display="inline-flex,none"
+      >
+        <p
+          class="c3"
+        >
+          browser
+        </p>
+      </div>
+      <p
+        class="c13"
+        data-testid="item-browser"
+      >
+        Chrome 32.0
+      </p>
+    </div>
+    <div
+      class="c15"
+      display="flex"
+    >
+      <div
+        class="c10"
+        display="inline-flex,none"
+      >
+        <p
+          class="c3"
+        >
+          device
+        </p>
+      </div>
+      <p
+        class="c13"
+        data-testid="item-device"
+      >
+        Desktop
+      </p>
+    </div>
+    <div
+      class="c16"
+      display="flex"
+    >
+      <div
+        class="c10"
+        display="inline-flex,none"
+      >
+        <p
+          class="c3"
+          data-testid="item-platform"
+        >
+          platform
+        </p>
+      </div>
+      <p
+        class="c13"
+      >
+        MacOSX
+      </p>
+    </div>
+  </div>
+  <div
+    class="c8"
+    data-testid="item"
+    display="grid"
+  >
+    <div
+      class="c9"
+      display="flex"
+    >
+      <div
+        class="c10"
+        display="inline-flex,none"
+      >
+        <p
+          class="c3"
+        >
+          rating
+        </p>
+      </div>
+      <span
+        class="c11"
+        data-testid="item-rating"
+        font-size="xs"
+        size="30"
+      >
+        3
+      </span>
+    </div>
+    <div
+      class="c12"
+      display="flex"
+    >
+      <div
+        class="c10"
+        display="inline-flex,none"
+      >
+        <p
+          class="c3"
+        >
+          comment
+        </p>
+      </div>
+      <p
+        class="c13"
+        data-testid="item-comment"
+      >
+        sugestia
+      </p>
+    </div>
+    <div
+      class="c14"
+      display="flex"
+    >
+      <div
+        class="c10"
+        display="inline-flex,none"
+      >
+        <p
+          class="c3"
+        >
+          browser
+        </p>
+      </div>
+      <p
+        class="c13"
+        data-testid="item-browser"
+      >
+        Chrome 32.0
+      </p>
+    </div>
+    <div
+      class="c15"
+      display="flex"
+    >
+      <div
+        class="c10"
+        display="inline-flex,none"
+      >
+        <p
+          class="c3"
+        >
+          device
+        </p>
+      </div>
+      <p
+        class="c13"
+        data-testid="item-device"
+      >
+        Desktop
+      </p>
+    </div>
+    <div
+      class="c16"
+      display="flex"
+    >
+      <div
+        class="c10"
+        display="inline-flex,none"
+      >
+        <p
+          class="c3"
+          data-testid="item-platform"
+        >
+          platform
+        </p>
+      </div>
+      <p
+        class="c13"
+      >
+        Win7
+      </p>
+    </div>
+  </div>
+</div>
+`;
