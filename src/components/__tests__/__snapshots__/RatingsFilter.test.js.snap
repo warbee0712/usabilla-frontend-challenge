@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RatingsFilter should match snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c0 > * + * {
+  margin-left: 0.6875rem;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  color: #59636b;
+  border: 1px solid #59636b;
+  border-radius: 9999em;
+  -webkit-transition: color 0.2s cubic-bezier(0.38,1.59,0.82,0.96), box-shadow 0.2s cubic-bezier(0.38,1.59,0.82,0.96);
+  transition: color 0.2s cubic-bezier(0.38,1.59,0.82,0.96), box-shadow 0.2s cubic-bezier(0.38,1.59,0.82,0.96);
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  font-size: 0.8125rem;
+  height: 30px;
+  width: 30px;
+  background-color: #00a5c9;
+  border-color: #00a5c9;
+  color: #fff;
+}
+
+.c1:hover {
+  background-color: #59636b;
+  border-color: #59636b;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  color: #fff;
+}
+
+.c1:focus {
+  border: 1px solid #00a5c9;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  outline: none;
+}
+
+.c1:hover {
+  background-color: #008aab;
+  border-color: #008aab;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  color: #fff;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  color: #59636b;
+  border: 1px solid #59636b;
+  border-radius: 9999em;
+  -webkit-transition: color 0.2s cubic-bezier(0.38,1.59,0.82,0.96), box-shadow 0.2s cubic-bezier(0.38,1.59,0.82,0.96);
+  transition: color 0.2s cubic-bezier(0.38,1.59,0.82,0.96), box-shadow 0.2s cubic-bezier(0.38,1.59,0.82,0.96);
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  font-size: 0.8125rem;
+  height: 30px;
+  width: 30px;
+}
+
+.c2:hover {
+  background-color: #59636b;
+  border-color: #59636b;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  color: #fff;
+}
+
+.c2:focus {
+  border: 1px solid #00a5c9;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  outline: none;
+}
+
+<div
+  class="c0"
+  display="flex"
+>
+  <button
+    class="c1"
+    font-size="xs"
+    size="30"
+  >
+    1
+  </button>
+  <button
+    class="c1"
+    font-size="xs"
+    size="30"
+  >
+    2
+  </button>
+  <button
+    class="c1"
+    font-size="xs"
+    size="30"
+  >
+    3
+  </button>
+  <button
+    class="c2"
+    font-size="xs"
+    size="30"
+  >
+    4
+  </button>
+  <button
+    class="c2"
+    font-size="xs"
+    size="30"
+  >
+    5
+  </button>
+</div>
+`;
