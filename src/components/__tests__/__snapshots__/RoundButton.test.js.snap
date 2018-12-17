@@ -1,73 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RoundButton active should match snapshot 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: transparent;
-  color: #59636b;
-  border: 1px solid #59636b;
-  border-radius: 9999em;
-  -webkit-transition: color 0.2s cubic-bezier(0.38,1.59,0.82,0.96), box-shadow 0.2s cubic-bezier(0.38,1.59,0.82,0.96);
-  transition: color 0.2s cubic-bezier(0.38,1.59,0.82,0.96), box-shadow 0.2s cubic-bezier(0.38,1.59,0.82,0.96);
-  position: relative;
-  cursor: pointer;
-  outline: none;
-  font-size: 0.8125rem;
-  height: 30px;
-  width: 30px;
-  background-color: #00a5c9;
-  border-color: #00a5c9;
-  color: #fff;
-}
-
-.c0:hover {
-  background-color: #59636b;
-  border-color: #59636b;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-  color: #fff;
-}
-
-.c0:focus {
-  border: 1px solid #00a5c9;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-  outline: none;
-}
-
-.c0:hover {
-  background-color: #008aab;
-  border-color: #008aab;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-  color: #fff;
-}
-
-@media screen and (min-width:40em) {
-  .c0 {
-    height: 40px;
-    width: 40px;
-  }
-}
-
-<button
-  class="c0"
-  font-size="xs"
->
-  1
-</button>
-`;
-
 exports[`RoundButton should match snapshot 1`] = `
 .c0 {
+  background-color: transparent;
+  color: #59636b;
+  border: 1px solid #59636b;
+  border-radius: 9999em;
+  -webkit-transition: color 0.2s cubic-bezier(0.38,1.59,0.82,0.96), box-shadow 0.2s cubic-bezier(0.38,1.59,0.82,0.96);
+  transition: color 0.2s cubic-bezier(0.38,1.59,0.82,0.96), box-shadow 0.2s cubic-bezier(0.38,1.59,0.82,0.96);
+  position: relative;
+  cursor: pointer;
+  outline: none;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -80,16 +23,6 @@ exports[`RoundButton should match snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
-  color: #59636b;
-  border: 1px solid #59636b;
-  border-radius: 9999em;
-  -webkit-transition: color 0.2s cubic-bezier(0.38,1.59,0.82,0.96), box-shadow 0.2s cubic-bezier(0.38,1.59,0.82,0.96);
-  transition: color 0.2s cubic-bezier(0.38,1.59,0.82,0.96), box-shadow 0.2s cubic-bezier(0.38,1.59,0.82,0.96);
-  position: relative;
-  cursor: pointer;
-  outline: none;
-  font-size: 0.8125rem;
   height: 30px;
   width: 30px;
 }
@@ -116,7 +49,6 @@ exports[`RoundButton should match snapshot 1`] = `
 
 <button
   class="c0"
-  font-size="xs"
 >
   1
 </button>

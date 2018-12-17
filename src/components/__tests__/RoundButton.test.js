@@ -8,9 +8,4 @@ describe('RoundButton', () => {
 
     expect(container.firstChild).toMatchSnapshot()
   })
-  it('active should match snapshot', () => {
-    const { container } = render(<RoundButton active>1</RoundButton>)
-
-    expect(container.firstChild).toMatchSnapshot()
-  })
 })
