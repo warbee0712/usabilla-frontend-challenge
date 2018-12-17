@@ -34,6 +34,8 @@ function useData() {
           id: item.id,
           comment: item.comment,
           computed_browser: item.computed_browser,
+          computed_location: item.computed_location,
+          geo: item.geo,
           rating: item.rating,
           device: getDevice(item.viewport),
         })),
