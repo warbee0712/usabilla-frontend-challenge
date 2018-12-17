@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import React, { useState, useMemo } from 'react'
 import { ThemeProvider } from 'styled-components'
 import intersection from 'lodash.intersection'
 
@@ -16,6 +16,8 @@ import Input from './components/Input'
 import PageHeader from './components/PageHeader'
 import RatingsFilter from './components/RatingsFilter'
 import TableList from './components/TableList'
+import Map from './components/Map'
+import Button from './components/Button'
 
 // Hooks
 import useData from './hooks/useData'
@@ -35,6 +37,11 @@ function App({ mock }) {
     filterResults,
     searchResults,
   ])
+  const [showMap, toggleMap] = useState(false)
+  const contentSwitch = () => {
+    if (showMap) return <Map items={items} />
+    return <TableList items={items} />
+  }
 
   return (
     <ThemeProvider theme={theme}>
@@ -49,14 +56,27 @@ function App({ mock }) {
           >
             <Input
               {...inputProps}
+              width={['100%', 300]}
               aria-label="search"
               placeholder="Search here..."
             />
-            <Box pt={['m', 0]} pl={[0, 'm']}>
+            <Flex
+              pt={['m', 0]}
+              pl={[0, 'm']}
+              width="100%"
+              justifyContent="space-between"
+            >
               <RatingsFilter {...filterProps} />
-            </Box>
+              <Button
+                onClick={() => toggleMap(state => !state)}
+                data-testid="toggle-map-table"
+              >
+                {showMap ? 'Show Table' : 'Show Map'}
+              </Button>
+            </Flex>
           </Flex>
-          {loading ? <Loading /> : <TableList items={items} />}
+          {/* this is a strong case for a router, but I'm gonna improvise here a bit. */}
+          {loading ? <Loading /> : contentSwitch()}
         </Box>
       </Flex>
     </ThemeProvider>

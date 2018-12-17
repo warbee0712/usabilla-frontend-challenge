@@ -124,6 +124,16 @@ describe('App', () => {
     expect(getAllByTestId('item')).toHaveLength(ITEMS.length)
   })
 
+  it('should show the map after toggle-map-table button click', () => {
+    const { getByTestId } = render(
+      <App mock={{ loading: false, data: ITEMS }} />
+    )
+
+    fireEvent.click(getByTestId('toggle-map-table'))
+
+    expect(getByTestId('map')).toBeTruthy()
+  })
+
   it('should show empty state when there is no data', () => {
     const { getByTestId } = render(<App mock={{ loading: false, data: [] }} />)
 
