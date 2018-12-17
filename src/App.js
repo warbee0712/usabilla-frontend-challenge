@@ -26,9 +26,11 @@ import useSearch from './hooks/useSearch'
 import theme from './theme'
 
 function App() {
-  const rawItems = useData()
-  const { filterResults, ...filterProps } = useRatingsFilter(rawItems)
-  const { searchResults, ...inputProps } = useSearch(rawItems)
+  const { loading, error, data } = useData()
+  // throws to error boundary
+  if (error) throw error
+  const { filterResults, ...filterProps } = useRatingsFilter(data)
+  const { searchResults, ...inputProps } = useSearch(data)
   const items = useMemo(() => intersection(filterResults, searchResults), [
     filterResults,
     searchResults,
@@ -54,7 +56,7 @@ function App() {
               <RatingsFilter {...filterProps} />
             </Box>
           </Flex>
-          {!rawItems ? <Loading /> : <TableList items={items} />}
+          {loading ? <Loading /> : <TableList items={items} />}
         </Box>
       </Flex>
     </ThemeProvider>

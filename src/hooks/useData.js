@@ -7,28 +7,39 @@ function getDevice(viewport) {
 }
 
 function useData() {
-  const [data, setData] = useState(null)
+  const [state, setState] = useState({ loading: true, error: null, data: null })
   const fetchData = async () => {
-    const response = await fetch(
-      'https://static.usabilla.com/recruitment/apidemo.json'
-    )
-    setData(await response.json())
+    try {
+      const response = await fetch(
+        'https://static.usabilla.com/recruitment/apidemo.json'
+      )
+      const data = await response.json()
+      setState({
+        loading: false,
+        data,
+      })
+    } catch (error) {
+      setState({ loading: false, error })
+    }
   }
   useEffect(() => {
     fetchData()
   }, [])
-  return useMemo(
-    () =>
-      data &&
-      data.items.map(item => ({
-        id: item.id,
-        comment: item.comment,
-        computed_browser: item.computed_browser,
-        rating: item.rating,
-        device: getDevice(item.viewport),
-      })),
-    [data]
-  )
+  return {
+    ...state,
+    data: useMemo(
+      () =>
+        state.data &&
+        state.data.items.map(item => ({
+          id: item.id,
+          comment: item.comment,
+          computed_browser: item.computed_browser,
+          rating: item.rating,
+          device: getDevice(item.viewport),
+        })),
+      [state.data]
+    ),
+  }
 }
 
 export default useData
