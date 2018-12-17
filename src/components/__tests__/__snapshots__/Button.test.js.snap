@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button active should match snapshot 1`] = `
+.c0 {
+  background-color: transparent;
+  color: #59636b;
+  border: 1px solid #59636b;
+  border-radius: 9999em;
+  -webkit-transition: color 0.2s cubic-bezier(0.38,1.59,0.82,0.96), box-shadow 0.2s cubic-bezier(0.38,1.59,0.82,0.96);
+  transition: color 0.2s cubic-bezier(0.38,1.59,0.82,0.96), box-shadow 0.2s cubic-bezier(0.38,1.59,0.82,0.96);
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  font-size: 0.8125rem;
+  background-color: #00a5c9;
+  border-color: #00a5c9;
+  color: #fff;
+}
+
+.c0:hover {
+  background-color: #59636b;
+  border-color: #59636b;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  color: #fff;
+}
+
+.c0:focus {
+  border: 1px solid #00a5c9;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  outline: none;
+}
+
+.c0:hover {
+  background-color: #008aab;
+  border-color: #008aab;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  color: #fff;
+}
+
+<button
+  class="c0"
+  font-size="xs"
+>
+  1
+</button>
+`;
+
+exports[`Button should match snapshot 1`] = `
+.c0 {
+  background-color: transparent;
+  color: #59636b;
+  border: 1px solid #59636b;
+  border-radius: 9999em;
+  -webkit-transition: color 0.2s cubic-bezier(0.38,1.59,0.82,0.96), box-shadow 0.2s cubic-bezier(0.38,1.59,0.82,0.96);
+  transition: color 0.2s cubic-bezier(0.38,1.59,0.82,0.96), box-shadow 0.2s cubic-bezier(0.38,1.59,0.82,0.96);
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  font-size: 0.8125rem;
+}
+
+.c0:hover {
+  background-color: #59636b;
+  border-color: #59636b;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  color: #fff;
+}
+
+.c0:focus {
+  border: 1px solid #00a5c9;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  outline: none;
+}
+
+<button
+  class="c0"
+  font-size="xs"
+>
+  1
+</button>
+`;
