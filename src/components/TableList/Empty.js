@@ -4,7 +4,12 @@ import Text from '../../elements/Text'
 
 const Empty = () => (
   <Box p={[75, 150]}>
-    <Text fontSize="l" lineHeight="l" textAlign="center">
+    <Text
+      fontSize="l"
+      lineHeight="l"
+      textAlign="center"
+      data-testid="empty-message"
+    >
       Oops, we couldn&apos;t find anything with these filters. Perhaps you can
       try loosening the search parameters a little bit.
     </Text>

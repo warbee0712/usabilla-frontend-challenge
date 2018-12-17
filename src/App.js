@@ -25,8 +25,8 @@ import useSearch from './hooks/useSearch'
 // Theme
 import theme from './theme'
 
-function App() {
-  const { loading, error, data } = useData()
+function App({ mock }) {
+  const { loading, error, data } = mock || useData()
   // throws to error boundary
   if (error) throw error
   const { filterResults, ...filterProps } = useRatingsFilter(data)

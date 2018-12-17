@@ -4,56 +4,7 @@ import TableList from '../TableList'
 import Item from '../TableList/Item'
 import Header from '../TableList/Header'
 
-const ITEMS = [
-  {
-    comment: 'belle offre de services',
-    computed_browser: {
-      Browser: 'Chrome',
-      Version: '32.0',
-      Platform: 'MacOSX',
-      FullBrowser: 'Chrome',
-    },
-    device: 'Desktop',
-    id: '52efc552b6679cfe6ede406c',
-    rating: 5,
-  },
-  {
-    comment: 'bouton ne fonctionne pas',
-    computed_browser: {
-      Browser: 'Chrome',
-      Version: '32.0',
-      Platform: 'MacOSX',
-      FullBrowser: 'Chrome',
-    },
-    device: 'Desktop',
-    id: '52efc51fb6679c986b24c7bd',
-    rating: 2,
-  },
-  {
-    comment: 'new layout awesome',
-    computed_browser: {
-      Browser: 'Chrome',
-      Version: '32.0',
-      Platform: 'MacOSX',
-      FullBrowser: 'Chrome',
-    },
-    device: 'Desktop',
-    id: '52efc4dcfa8d1bda61ec1c64',
-    rating: 4,
-  },
-  {
-    comment: 'sugestia',
-    computed_browser: {
-      Browser: 'Chrome',
-      Version: '32.0',
-      Platform: 'Win7',
-      FullBrowser: 'Chrome',
-    },
-    device: 'Desktop',
-    id: '52ef53d2b6679c4a3cdb593c',
-    rating: 3,
-  },
-]
+import ITEMS from '../__mock__/items.json'
 
 describe('TableList', () => {
   it('should match snapshot', () => {

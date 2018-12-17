@@ -3,7 +3,7 @@ import React from 'react'
 function Loading() {
   return (
     <>
-      <span>loading...</span>
+      <span data-testid="loading">loading...</span>
     </>
   )
 }

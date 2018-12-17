@@ -2,7 +2,11 @@ import React from 'react'
 import { render, fireEvent, wait } from 'test-utils'
 import App from './App'
 
+import ITEMS from './components/__mock__/items.json'
+import ErrorBoundary from './components/ErrorBoundary'
+
 describe('App', () => {
+  // unmocked tests (almost e2e)
   it('renders without crashing', async () => {
     const { container, queryByTestId } = render(<App />)
 
@@ -12,6 +16,7 @@ describe('App', () => {
 
     expect(container).toBeTruthy()
   })
+
   it('loads data from url after mounting', async () => {
     const { queryByTestId, getByTestId } = render(<App />)
 
@@ -19,6 +24,7 @@ describe('App', () => {
 
     expect(getByTestId('table-list')).toBeInTheDocument()
   })
+
   it('shows only items from active rating filters', async () => {
     // Setup
     const { getByText, queryAllByText, queryByTestId } = render(<App />)
@@ -59,6 +65,7 @@ describe('App', () => {
       itemsByRatingBeforeFilter[4]
     )
   })
+
   it('shows only items that match the search', async () => {
     // Setup
     const {
@@ -87,5 +94,39 @@ describe('App', () => {
     getAllByTestId('item-comment')
       .map(node => node.textContent)
       .map(comment => expect(comment).toMatch(firstWord))
+  })
+
+  // tests with mock useData hook
+  it('should show loading message when loading', () => {
+    const { getByTestId } = render(<App mock={{ loading: true }} />)
+
+    expect(getByTestId('loading')).toBeTruthy()
+  })
+
+  it('should show fallback error UI on error', () => {
+    jest.spyOn(console, 'error')
+    global.console.error.mockImplementation(() => {})
+    const { getByTestId } = render(
+      <ErrorBoundary>
+        <App mock={{ error: true }} />
+      </ErrorBoundary>
+    )
+
+    expect(getByTestId('error-message')).toBeTruthy()
+    global.console.error.mockRestore()
+  })
+
+  it('should show items list when items available', () => {
+    const { getAllByTestId } = render(
+      <App mock={{ loading: false, data: ITEMS }} />
+    )
+
+    expect(getAllByTestId('item')).toHaveLength(ITEMS.length)
+  })
+
+  it('should show empty state when there is no data', () => {
+    const { getByTestId } = render(<App mock={{ loading: false, data: [] }} />)
+
+    expect(getByTestId('empty-message')).toBeTruthy()
   })
 })
