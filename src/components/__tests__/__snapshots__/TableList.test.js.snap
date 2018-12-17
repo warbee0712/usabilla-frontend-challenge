@@ -452,8 +452,8 @@ exports[`TableList empty state should match snapshot 1`] = `
 
 .c9 {
   font-family: Milo,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-  font-size: 1rem;
-  line-height: normal;
+  font-size: 1.4375rem;
+  line-height: 2.0625rem;
   text-align: center;
 }
 
@@ -554,7 +554,7 @@ exports[`TableList empty state should match snapshot 1`] = `
     <p
       class="c9"
       font-family="primary"
-      font-size="s"
+      font-size="l"
     >
       Oops, we couldn't find anything with these filters. Perhaps you can try loosening the search parameters a little bit.
     </p>
