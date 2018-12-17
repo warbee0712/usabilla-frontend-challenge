@@ -42,7 +42,7 @@ const RoundButton = styled.button`
 `
 
 RoundButton.defaultProps = {
-  size: 30,
+  size: [30, 40],
   fontSize: 'xs',
 }
 

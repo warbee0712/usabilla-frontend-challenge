@@ -24,7 +24,7 @@ const RoundLabel = styled.span`
 `
 
 RoundLabel.defaultProps = {
-  size: 30,
+  size: [30, 40],
   fontSize: 'xs',
 }
 

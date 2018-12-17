@@ -51,10 +51,16 @@ exports[`RoundButton active should match snapshot 1`] = `
   color: #fff;
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    height: 40px;
+    width: 40px;
+  }
+}
+
 <button
   class="c0"
   font-size="xs"
-  size="30"
 >
   1
 </button>
@@ -101,10 +107,16 @@ exports[`RoundButton should match snapshot 1`] = `
   outline: none;
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    height: 40px;
+    width: 40px;
+  }
+}
+
 <button
   class="c0"
   font-size="xs"
-  size="30"
 >
   1
 </button>
