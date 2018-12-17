@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 
 function getDevice(viewport) {
   if (viewport < 768) return 'Mobile'
@@ -17,15 +17,17 @@ function useData() {
   useEffect(() => {
     fetchData()
   }, [])
-  return (
-    data &&
-    data.items.map(item => ({
-      id: item.id,
-      comment: item.comment,
-      computed_browser: item.computed_browser,
-      rating: item.rating,
-      device: getDevice(item.viewport),
-    }))
+  return useMemo(
+    () =>
+      data &&
+      data.items.map(item => ({
+        id: item.id,
+        comment: item.comment,
+        computed_browser: item.computed_browser,
+        rating: item.rating,
+        device: getDevice(item.viewport),
+      })),
+    [data]
   )
 }
 
