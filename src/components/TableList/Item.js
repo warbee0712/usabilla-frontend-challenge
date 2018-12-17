@@ -32,7 +32,7 @@ const Item = memo(({ data }) => (
     data-testid="item"
   >
     <Flex pb={['s', 0]} alignItems="baseline" gridArea="rating">
-      <Box display={['inline-flex', 'none']} flex="0 100px">
+      <Box display={['inline-flex', 'none']} flex="0 0 100px">
         <HeaderText>rating</HeaderText>
       </Box>
       <Badge active data-testid="item-rating">
@@ -40,13 +40,13 @@ const Item = memo(({ data }) => (
       </Badge>
     </Flex>
     <Flex pb={['s', 0]} alignItems="baseline" gridArea="comment">
-      <Box display={['inline-flex', 'none']} flex="0 100px">
+      <Box display={['inline-flex', 'none']} flex="0 0 100px">
         <HeaderText>comment</HeaderText>
       </Box>
       <SmallText data-testid="item-comment">{data.comment}</SmallText>
     </Flex>
     <Flex pb={['s', 0]} alignItems="baseline" gridArea="browser">
-      <Box display={['inline-flex', 'none']} flex="0 100px">
+      <Box display={['inline-flex', 'none']} flex="0 0 100px">
         <HeaderText>browser</HeaderText>
       </Box>
       <SmallText data-testid="item-browser">{`${
@@ -54,13 +54,13 @@ const Item = memo(({ data }) => (
       } ${data.computed_browser.Version}`}</SmallText>
     </Flex>
     <Flex pb={['s', 0]} alignItems="baseline" gridArea="device">
-      <Box display={['inline-flex', 'none']} flex="0 100px">
+      <Box display={['inline-flex', 'none']} flex="0 0 100px">
         <HeaderText>device</HeaderText>
       </Box>
       <SmallText data-testid="item-device">{data.device}</SmallText>
     </Flex>
     <Flex pb={['s', 0]} alignItems="baseline" gridArea="platform">
-      <Box display={['inline-flex', 'none']} flex="0 100px">
+      <Box display={['inline-flex', 'none']} flex="0 0 100px">
         <HeaderText data-testid="item-platform">platform</HeaderText>
       </Box>
       <SmallText>{data.computed_browser.Platform}</SmallText>

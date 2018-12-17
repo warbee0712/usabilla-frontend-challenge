@@ -88,9 +88,9 @@ exports[`TableList Item should match snapshot 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-flex: 0 100px;
-  -ms-flex: 0 100px;
-  flex: 0 100px;
+  -webkit-flex: 0 0 100px;
+  -ms-flex: 0 0 100px;
+  flex: 0 0 100px;
 }
 
 .c1 {
@@ -589,9 +589,9 @@ exports[`TableList should match snapshot 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-flex: 0 100px;
-  -ms-flex: 0 100px;
-  flex: 0 100px;
+  -webkit-flex: 0 0 100px;
+  -ms-flex: 0 0 100px;
+  flex: 0 0 100px;
 }
 
 .c0 {
