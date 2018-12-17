@@ -7,7 +7,7 @@ import Heading from './Heading'
 function PageHeader() {
   return (
     <Box px="xl" py="m" position="relative" boxShadow="default">
-      <Heading>
+      <Heading fontWeight={500}>
         <span role="img" aria-label="smiling face with heart-shaped eyes">
           😍
         </span>{' '}

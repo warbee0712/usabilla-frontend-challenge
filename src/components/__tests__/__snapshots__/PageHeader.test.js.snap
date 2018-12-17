@@ -11,7 +11,10 @@ exports[`PageHeader should match snapshot 1`] = `
 }
 
 .c1 {
+  font-family: Milo,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
   font-size: 1.1875rem;
+  font-weight: 500;
+  line-height: 1.6875rem;
 }
 
 <div
@@ -19,7 +22,9 @@ exports[`PageHeader should match snapshot 1`] = `
 >
   <h1
     class="c1"
-    font-size="m"
+    font-family="primary"
+    font-size="s"
+    font-weight="500"
   >
     <span
       aria-label="smiling face with heart-shaped eyes"
