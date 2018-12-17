@@ -10,7 +10,7 @@ Before you go into the code itself, I'd like to add some notes on choices I've m
 
 ### Stylabilla
 
-To start with I faced the choice of either importing the whole stylabilla and using its classes or to take parts of it, create a few components and a theme. In my humble opinion, the latter suits React application better, so that's what I went for. I felt like importing the whole stylesheet would be unecessary. But, as an advocate of CSS-in-JS, I'm biased.
+To start with I faced the choice of either importing the whole stylabilla and using its classes or to take parts of it, create a few components and a theme. In my humble opinion, the latter suits React applications better, so that's what I went for. I felt like importing the whole stylesheet would be unnecessary. But, as an advocate of CSS-in-JS, I'm biased.
 
 ### Prettier + ESLint
 
