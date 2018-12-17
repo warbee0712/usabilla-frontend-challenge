@@ -1,8 +1,16 @@
 ## Usabilla Front Developer Challenge
 
-Hi there. I'm Juliano Rafael and this is my solution the Usabilla Front End Developer Challenge. This is a weekend of non stop coding and fun. :D
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![codecov](https://codecov.io/gh/thefrontendwizard/usabilla-frontend-challenge/branch/master/graph/badge.svg?token=AxV2s66wK7)](https://codecov.io/gh/thefrontendwizard/usabilla-frontend-challenge)
+
+Hi there. I'm Juliano Rafael and this is my solution the Usabilla Front End Developer Challenge. This was a weekend of non stop coding and fun. :D
 
 Before you go into the code itself, I'd like to add some notes on choices I've made and why.
+
+### Stylabilla
+
+To start with I faced the choice of either importing the whole stylabilla and using its classes or to take parts of it, create a few components and a theme. In my humble opinion, the latter suits React application better, so that's what I went for. I felt like importing the whole stylesheet would be unecessary. But, as an advocate of CSS-in-JS, I'm biased.
 
 ### Prettier + ESLint
 
