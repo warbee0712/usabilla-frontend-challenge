@@ -16,6 +16,18 @@ exports[`RatingsFilter should match snapshot 1`] = `
 }
 
 .c1 {
+  background-color: transparent;
+  color: #59636b;
+  border: 1px solid #59636b;
+  border-radius: 9999em;
+  -webkit-transition: color 0.2s cubic-bezier(0.38,1.59,0.82,0.96), box-shadow 0.2s cubic-bezier(0.38,1.59,0.82,0.96);
+  transition: color 0.2s cubic-bezier(0.38,1.59,0.82,0.96), box-shadow 0.2s cubic-bezier(0.38,1.59,0.82,0.96);
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  background-color: #00a5c9;
+  border-color: #00a5c9;
+  color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -28,21 +40,8 @@ exports[`RatingsFilter should match snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
-  color: #59636b;
-  border: 1px solid #59636b;
-  border-radius: 9999em;
-  -webkit-transition: color 0.2s cubic-bezier(0.38,1.59,0.82,0.96), box-shadow 0.2s cubic-bezier(0.38,1.59,0.82,0.96);
-  transition: color 0.2s cubic-bezier(0.38,1.59,0.82,0.96), box-shadow 0.2s cubic-bezier(0.38,1.59,0.82,0.96);
-  position: relative;
-  cursor: pointer;
-  outline: none;
-  font-size: 0.8125rem;
   height: 30px;
   width: 30px;
-  background-color: #00a5c9;
-  border-color: #00a5c9;
-  color: #fff;
 }
 
 .c1:hover {
@@ -66,6 +65,15 @@ exports[`RatingsFilter should match snapshot 1`] = `
 }
 
 .c2 {
+  background-color: transparent;
+  color: #59636b;
+  border: 1px solid #59636b;
+  border-radius: 9999em;
+  -webkit-transition: color 0.2s cubic-bezier(0.38,1.59,0.82,0.96), box-shadow 0.2s cubic-bezier(0.38,1.59,0.82,0.96);
+  transition: color 0.2s cubic-bezier(0.38,1.59,0.82,0.96), box-shadow 0.2s cubic-bezier(0.38,1.59,0.82,0.96);
+  position: relative;
+  cursor: pointer;
+  outline: none;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -78,16 +86,6 @@ exports[`RatingsFilter should match snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
-  color: #59636b;
-  border: 1px solid #59636b;
-  border-radius: 9999em;
-  -webkit-transition: color 0.2s cubic-bezier(0.38,1.59,0.82,0.96), box-shadow 0.2s cubic-bezier(0.38,1.59,0.82,0.96);
-  transition: color 0.2s cubic-bezier(0.38,1.59,0.82,0.96), box-shadow 0.2s cubic-bezier(0.38,1.59,0.82,0.96);
-  position: relative;
-  cursor: pointer;
-  outline: none;
-  font-size: 0.8125rem;
   height: 30px;
   width: 30px;
 }
@@ -125,31 +123,26 @@ exports[`RatingsFilter should match snapshot 1`] = `
 >
   <button
     class="c1"
-    font-size="xs"
   >
     1
   </button>
   <button
     class="c1"
-    font-size="xs"
   >
     2
   </button>
   <button
     class="c1"
-    font-size="xs"
   >
     3
   </button>
   <button
     class="c2"
-    font-size="xs"
   >
     4
   </button>
   <button
     class="c2"
-    font-size="xs"
   >
     5
   </button>
