@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "name": "usabilla-frontend-challenge",
+  "alias": "frontendwizard-usabilla.now.sh",
+  "builds": [{ "src": "package.json", "use": "@now/static-build" }]
+}
