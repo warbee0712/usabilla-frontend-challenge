@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "d3-scale": "^2.1.2",
     "lodash.intersection": "^4.4.0",
     "polished": "^2.3.1",
     "react": "^16.7.0-alpha.2",
     "react-dom": "^16.7.0-alpha.2",
     "react-scripts": "2.1.1",
+    "react-simple-maps": "^0.12.1",
     "reset.css": "^2.0.2",
     "styled-components": "^4.1.2",
     "styled-system": "^3.1.11"
