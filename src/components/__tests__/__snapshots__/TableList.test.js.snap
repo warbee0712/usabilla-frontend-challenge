@@ -27,10 +27,10 @@ exports[`TableList Header should match snapshot 1`] = `
 .c2 {
   font-family: Milo,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
   font-size: 1rem;
+  font-weight: 500;
   line-height: normal;
   text-transform: lowercase;
   font-variant: small-caps;
-  font-weight: 500;
 }
 
 @media screen and (min-width:40em) {
@@ -48,6 +48,9 @@ exports[`TableList Header should match snapshot 1`] = `
   >
     <p
       class="c2"
+      font-family="primary"
+      font-size="s"
+      font-weight="500"
     >
       field1
     </p>
@@ -57,6 +60,9 @@ exports[`TableList Header should match snapshot 1`] = `
   >
     <p
       class="c2"
+      font-family="primary"
+      font-size="s"
+      font-weight="500"
     >
       field2
     </p>
@@ -66,6 +72,9 @@ exports[`TableList Header should match snapshot 1`] = `
   >
     <p
       class="c2"
+      font-family="primary"
+      font-size="s"
+      font-weight="500"
     >
       field3
     </p>
@@ -152,10 +161,10 @@ exports[`TableList Item should match snapshot 1`] = `
 .c3 {
   font-family: Milo,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
   font-size: 1rem;
+  font-weight: 500;
   line-height: normal;
   text-transform: lowercase;
   font-variant: small-caps;
-  font-weight: 500;
 }
 
 .c4 {
@@ -196,7 +205,7 @@ exports[`TableList Item should match snapshot 1`] = `
 }
 
 .c6 {
-  font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  font-family: Milo,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
   font-size: 0.8125rem;
   line-height: 1.1875rem;
 }
@@ -238,6 +247,13 @@ exports[`TableList Item should match snapshot 1`] = `
 }
 
 @media screen and (min-width:40em) {
+  .c4 {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media screen and (min-width:40em) {
   .c0 {
     grid-auto-columns: 1fr 4fr 2fr 2fr 2fr;
   }
@@ -264,6 +280,9 @@ exports[`TableList Item should match snapshot 1`] = `
     >
       <p
         class="c3"
+        font-family="primary"
+        font-size="s"
+        font-weight="500"
       >
         rating
       </p>
@@ -272,7 +291,6 @@ exports[`TableList Item should match snapshot 1`] = `
       class="c4"
       data-testid="item-rating"
       font-size="xs"
-      size="30"
     >
       5
     </span>
@@ -287,16 +305,21 @@ exports[`TableList Item should match snapshot 1`] = `
     >
       <p
         class="c3"
+        font-family="primary"
+        font-size="s"
+        font-weight="500"
       >
         comment
       </p>
     </div>
-    <p
+    <span
       class="c6"
       data-testid="item-comment"
+      font-family="primary"
+      font-size="s"
     >
       belle offre de services
-    </p>
+    </span>
   </div>
   <div
     class="c7"
@@ -308,16 +331,21 @@ exports[`TableList Item should match snapshot 1`] = `
     >
       <p
         class="c3"
+        font-family="primary"
+        font-size="s"
+        font-weight="500"
       >
         browser
       </p>
     </div>
-    <p
+    <span
       class="c6"
       data-testid="item-browser"
+      font-family="primary"
+      font-size="s"
     >
       Chrome 32.0
-    </p>
+    </span>
   </div>
   <div
     class="c8"
@@ -329,16 +357,21 @@ exports[`TableList Item should match snapshot 1`] = `
     >
       <p
         class="c3"
+        font-family="primary"
+        font-size="s"
+        font-weight="500"
       >
         device
       </p>
     </div>
-    <p
+    <span
       class="c6"
       data-testid="item-device"
+      font-family="primary"
+      font-size="s"
     >
       Desktop
-    </p>
+    </span>
   </div>
   <div
     class="c9"
@@ -351,15 +384,20 @@ exports[`TableList Item should match snapshot 1`] = `
       <p
         class="c3"
         data-testid="item-platform"
+        font-family="primary"
+        font-size="s"
+        font-weight="500"
       >
         platform
       </p>
     </div>
-    <p
+    <span
       class="c6"
+      font-family="primary"
+      font-size="s"
     >
       MacOSX
-    </p>
+    </span>
   </div>
 </div>
 `;
@@ -486,10 +524,10 @@ exports[`TableList should match snapshot 1`] = `
 .c3 {
   font-family: Milo,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
   font-size: 1rem;
+  font-weight: 500;
   line-height: normal;
   text-transform: lowercase;
   font-variant: small-caps;
-  font-weight: 500;
 }
 
 .c11 {
@@ -530,7 +568,7 @@ exports[`TableList should match snapshot 1`] = `
 }
 
 .c13 {
-  font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  font-family: Milo,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
   font-size: 0.8125rem;
   line-height: 1.1875rem;
 }
@@ -578,6 +616,13 @@ exports[`TableList should match snapshot 1`] = `
 }
 
 @media screen and (min-width:40em) {
+  .c11 {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media screen and (min-width:40em) {
   .c8 {
     grid-auto-columns: 1fr 4fr 2fr 2fr 2fr;
   }
@@ -603,6 +648,9 @@ exports[`TableList should match snapshot 1`] = `
     >
       <p
         class="c3"
+        font-family="primary"
+        font-size="s"
+        font-weight="500"
       >
         rating
       </p>
@@ -612,6 +660,9 @@ exports[`TableList should match snapshot 1`] = `
     >
       <p
         class="c3"
+        font-family="primary"
+        font-size="s"
+        font-weight="500"
       >
         comment
       </p>
@@ -621,6 +672,9 @@ exports[`TableList should match snapshot 1`] = `
     >
       <p
         class="c3"
+        font-family="primary"
+        font-size="s"
+        font-weight="500"
       >
         browser
       </p>
@@ -630,6 +684,9 @@ exports[`TableList should match snapshot 1`] = `
     >
       <p
         class="c3"
+        font-family="primary"
+        font-size="s"
+        font-weight="500"
       >
         device
       </p>
@@ -639,6 +696,9 @@ exports[`TableList should match snapshot 1`] = `
     >
       <p
         class="c3"
+        font-family="primary"
+        font-size="s"
+        font-weight="500"
       >
         platform
       </p>
@@ -659,6 +719,9 @@ exports[`TableList should match snapshot 1`] = `
       >
         <p
           class="c3"
+          font-family="primary"
+          font-size="s"
+          font-weight="500"
         >
           rating
         </p>
@@ -667,7 +730,6 @@ exports[`TableList should match snapshot 1`] = `
         class="c11"
         data-testid="item-rating"
         font-size="xs"
-        size="30"
       >
         5
       </span>
@@ -682,16 +744,21 @@ exports[`TableList should match snapshot 1`] = `
       >
         <p
           class="c3"
+          font-family="primary"
+          font-size="s"
+          font-weight="500"
         >
           comment
         </p>
       </div>
-      <p
+      <span
         class="c13"
         data-testid="item-comment"
+        font-family="primary"
+        font-size="s"
       >
         belle offre de services
-      </p>
+      </span>
     </div>
     <div
       class="c14"
@@ -703,16 +770,21 @@ exports[`TableList should match snapshot 1`] = `
       >
         <p
           class="c3"
+          font-family="primary"
+          font-size="s"
+          font-weight="500"
         >
           browser
         </p>
       </div>
-      <p
+      <span
         class="c13"
         data-testid="item-browser"
+        font-family="primary"
+        font-size="s"
       >
         Chrome 32.0
-      </p>
+      </span>
     </div>
     <div
       class="c15"
@@ -724,16 +796,21 @@ exports[`TableList should match snapshot 1`] = `
       >
         <p
           class="c3"
+          font-family="primary"
+          font-size="s"
+          font-weight="500"
         >
           device
         </p>
       </div>
-      <p
+      <span
         class="c13"
         data-testid="item-device"
+        font-family="primary"
+        font-size="s"
       >
         Desktop
-      </p>
+      </span>
     </div>
     <div
       class="c16"
@@ -746,15 +823,20 @@ exports[`TableList should match snapshot 1`] = `
         <p
           class="c3"
           data-testid="item-platform"
+          font-family="primary"
+          font-size="s"
+          font-weight="500"
         >
           platform
         </p>
       </div>
-      <p
+      <span
         class="c13"
+        font-family="primary"
+        font-size="s"
       >
         MacOSX
-      </p>
+      </span>
     </div>
   </div>
   <div
@@ -772,6 +854,9 @@ exports[`TableList should match snapshot 1`] = `
       >
         <p
           class="c3"
+          font-family="primary"
+          font-size="s"
+          font-weight="500"
         >
           rating
         </p>
@@ -780,7 +865,6 @@ exports[`TableList should match snapshot 1`] = `
         class="c11"
         data-testid="item-rating"
         font-size="xs"
-        size="30"
       >
         2
       </span>
@@ -795,16 +879,21 @@ exports[`TableList should match snapshot 1`] = `
       >
         <p
           class="c3"
+          font-family="primary"
+          font-size="s"
+          font-weight="500"
         >
           comment
         </p>
       </div>
-      <p
+      <span
         class="c13"
         data-testid="item-comment"
+        font-family="primary"
+        font-size="s"
       >
         bouton ne fonctionne pas
-      </p>
+      </span>
     </div>
     <div
       class="c14"
@@ -816,16 +905,21 @@ exports[`TableList should match snapshot 1`] = `
       >
         <p
           class="c3"
+          font-family="primary"
+          font-size="s"
+          font-weight="500"
         >
           browser
         </p>
       </div>
-      <p
+      <span
         class="c13"
         data-testid="item-browser"
+        font-family="primary"
+        font-size="s"
       >
         Chrome 32.0
-      </p>
+      </span>
     </div>
     <div
       class="c15"
@@ -837,16 +931,21 @@ exports[`TableList should match snapshot 1`] = `
       >
         <p
           class="c3"
+          font-family="primary"
+          font-size="s"
+          font-weight="500"
         >
           device
         </p>
       </div>
-      <p
+      <span
         class="c13"
         data-testid="item-device"
+        font-family="primary"
+        font-size="s"
       >
         Desktop
-      </p>
+      </span>
     </div>
     <div
       class="c16"
@@ -859,15 +958,20 @@ exports[`TableList should match snapshot 1`] = `
         <p
           class="c3"
           data-testid="item-platform"
+          font-family="primary"
+          font-size="s"
+          font-weight="500"
         >
           platform
         </p>
       </div>
-      <p
+      <span
         class="c13"
+        font-family="primary"
+        font-size="s"
       >
         MacOSX
-      </p>
+      </span>
     </div>
   </div>
   <div
@@ -885,6 +989,9 @@ exports[`TableList should match snapshot 1`] = `
       >
         <p
           class="c3"
+          font-family="primary"
+          font-size="s"
+          font-weight="500"
         >
           rating
         </p>
@@ -893,7 +1000,6 @@ exports[`TableList should match snapshot 1`] = `
         class="c11"
         data-testid="item-rating"
         font-size="xs"
-        size="30"
       >
         4
       </span>
@@ -908,16 +1014,21 @@ exports[`TableList should match snapshot 1`] = `
       >
         <p
           class="c3"
+          font-family="primary"
+          font-size="s"
+          font-weight="500"
         >
           comment
         </p>
       </div>
-      <p
+      <span
         class="c13"
         data-testid="item-comment"
+        font-family="primary"
+        font-size="s"
       >
         new layout awesome
-      </p>
+      </span>
     </div>
     <div
       class="c14"
@@ -929,16 +1040,21 @@ exports[`TableList should match snapshot 1`] = `
       >
         <p
           class="c3"
+          font-family="primary"
+          font-size="s"
+          font-weight="500"
         >
           browser
         </p>
       </div>
-      <p
+      <span
         class="c13"
         data-testid="item-browser"
+        font-family="primary"
+        font-size="s"
       >
         Chrome 32.0
-      </p>
+      </span>
     </div>
     <div
       class="c15"
@@ -950,16 +1066,21 @@ exports[`TableList should match snapshot 1`] = `
       >
         <p
           class="c3"
+          font-family="primary"
+          font-size="s"
+          font-weight="500"
         >
           device
         </p>
       </div>
-      <p
+      <span
         class="c13"
         data-testid="item-device"
+        font-family="primary"
+        font-size="s"
       >
         Desktop
-      </p>
+      </span>
     </div>
     <div
       class="c16"
@@ -972,15 +1093,20 @@ exports[`TableList should match snapshot 1`] = `
         <p
           class="c3"
           data-testid="item-platform"
+          font-family="primary"
+          font-size="s"
+          font-weight="500"
         >
           platform
         </p>
       </div>
-      <p
+      <span
         class="c13"
+        font-family="primary"
+        font-size="s"
       >
         MacOSX
-      </p>
+      </span>
     </div>
   </div>
   <div
@@ -998,6 +1124,9 @@ exports[`TableList should match snapshot 1`] = `
       >
         <p
           class="c3"
+          font-family="primary"
+          font-size="s"
+          font-weight="500"
         >
           rating
         </p>
@@ -1006,7 +1135,6 @@ exports[`TableList should match snapshot 1`] = `
         class="c11"
         data-testid="item-rating"
         font-size="xs"
-        size="30"
       >
         3
       </span>
@@ -1021,16 +1149,21 @@ exports[`TableList should match snapshot 1`] = `
       >
         <p
           class="c3"
+          font-family="primary"
+          font-size="s"
+          font-weight="500"
         >
           comment
         </p>
       </div>
-      <p
+      <span
         class="c13"
         data-testid="item-comment"
+        font-family="primary"
+        font-size="s"
       >
         sugestia
-      </p>
+      </span>
     </div>
     <div
       class="c14"
@@ -1042,16 +1175,21 @@ exports[`TableList should match snapshot 1`] = `
       >
         <p
           class="c3"
+          font-family="primary"
+          font-size="s"
+          font-weight="500"
         >
           browser
         </p>
       </div>
-      <p
+      <span
         class="c13"
         data-testid="item-browser"
+        font-family="primary"
+        font-size="s"
       >
         Chrome 32.0
-      </p>
+      </span>
     </div>
     <div
       class="c15"
@@ -1063,16 +1201,21 @@ exports[`TableList should match snapshot 1`] = `
       >
         <p
           class="c3"
+          font-family="primary"
+          font-size="s"
+          font-weight="500"
         >
           device
         </p>
       </div>
-      <p
+      <span
         class="c13"
         data-testid="item-device"
+        font-family="primary"
+        font-size="s"
       >
         Desktop
-      </p>
+      </span>
     </div>
     <div
       class="c16"
@@ -1085,15 +1228,20 @@ exports[`TableList should match snapshot 1`] = `
         <p
           class="c3"
           data-testid="item-platform"
+          font-family="primary"
+          font-size="s"
+          font-weight="500"
         >
           platform
         </p>
       </div>
-      <p
+      <span
         class="c13"
+        font-family="primary"
+        font-size="s"
       >
         Win7
-      </p>
+      </span>
     </div>
   </div>
 </div>
