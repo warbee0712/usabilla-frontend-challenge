@@ -45,7 +45,12 @@ class ErrorBoundary extends React.Component {
                   😢
                 </span>
               </Text>
-              <Text fontSize="l" lineHeight="l" textAlign="center">
+              <Text
+                fontSize="l"
+                lineHeight="l"
+                textAlign="center"
+                data-testid="error-message"
+              >
                 Oops, it appears that the request for the json failed. Maybe
                 reloading will help. I&apos;m sorry about that, unless this is
                 part of the test, then shame on you, you&apos;re not going to
