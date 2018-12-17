@@ -3,7 +3,7 @@ import { useState, useMemo } from 'react'
 const RATINGS = [1, 2, 3, 4, 5]
 
 function useRatingsFilter(items) {
-  const [state, setState] = useState(RATINGS.slice(1, 4))
+  const [state, setState] = useState(RATINGS)
   const toggleFilter = item => {
     if (state.find(el => el === item))
       setState(state => state.filter(rating => rating !== item))
