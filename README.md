@@ -20,7 +20,7 @@ I love CSS-in-JS. I wrote a bit about this [here](https://blog.getty.io/developi
 
 ### List performance
 
-If you tested the table, you're going to see that it's slow when it has to process all the 100 items. I memoized all the items to avoid unecessary rerenders, but that's still not good enough. Decoupling the list filtering from the user input or rating filter feedback will certainly improve the perceived performance. Another possible improvement is to debounce the filter events from the search input. Those were not pursued due to time constraints.
+If you tested the table, you're going to see that it's slow when it has to process all the 100 items. I memoized all the items to avoid unecessary rerenders, but that's still not perfect. Decoupling the list filtering from the search input or rating filter feedback and debouncing it will certainly improve the perceived performance. This could be achieved beautifully with redux-saga, but I think that's a bit too much for this challenge.
 
 ### Elements and Components
 
