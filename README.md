@@ -1,7 +1,8 @@
 ## Usabilla Front Developer Challenge
 
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Build Status](https://travis-ci.com/thefrontendwizard/usabilla-frontend-challenge.svg?branch=master)](https://travis-ci.com/thefrontendwizard/usabilla-frontend-challenge)
 [![codecov](https://codecov.io/gh/thefrontendwizard/usabilla-frontend-challenge/branch/master/graph/badge.svg?token=AxV2s66wK7)](https://codecov.io/gh/thefrontendwizard/usabilla-frontend-challenge)
 
 Hi there. I'm Juliano Rafael and this is my solution the Usabilla Front End Developer Challenge. This was a weekend of non stop coding and fun. :D
