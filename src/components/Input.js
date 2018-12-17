@@ -32,7 +32,6 @@ Input.defaultProps = {
   fontSize: 'xs',
   px: 'm',
   py: 's',
-  width: 300,
 }
 
 export default Input

@@ -11,7 +11,6 @@ exports[`Input should match snapshot 1`] = `
   padding-right: 1rem;
   padding-top: 0.6875rem;
   padding-bottom: 0.6875rem;
-  width: 300px;
 }
 
 .c0:hover {
@@ -29,6 +28,5 @@ exports[`Input should match snapshot 1`] = `
   color="dark3"
   font-size="xs"
   placeholder="Search here..."
-  width="300"
 />
 `;
