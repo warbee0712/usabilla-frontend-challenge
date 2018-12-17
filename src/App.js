@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react'
 import { ThemeProvider } from 'styled-components'
+import intersection from 'lodash.intersection'
 
 // Global Styles
 import 'reset.css'
@@ -25,22 +26,13 @@ import useSearch from './hooks/useSearch'
 import theme from './theme'
 
 function App() {
-  const { query, onQueryChange, applyQueryFilter } = useSearch()
   const rawItems = useData()
-  const {
-    activeFilters,
-    options,
-    toggleFilter,
-    applyRatingFilter,
-  } = useRatingsFilter()
-  const items = useMemo(
-    () =>
-      rawItems &&
-      rawItems
-        .filter(item => applyRatingFilter(item, activeFilters))
-        .filter(item => applyQueryFilter(item, query)),
-    [rawItems, activeFilters, query]
-  )
+  const { filterResults, ...filterProps } = useRatingsFilter(rawItems)
+  const { searchResults, ...inputProps } = useSearch(rawItems)
+  const items = useMemo(() => intersection(filterResults, searchResults), [
+    filterResults,
+    searchResults,
+  ])
 
   return (
     <ThemeProvider theme={theme}>
@@ -54,17 +46,12 @@ function App() {
             mb="l"
           >
             <Input
-              value={query}
-              onChange={onQueryChange}
+              {...inputProps}
               aria-label="search"
               placeholder="Search here..."
             />
             <Box pt={['m', 0]} pl={[0, 'm']}>
-              <RatingsFilter
-                active={activeFilters}
-                options={options}
-                toggleFilter={toggleFilter}
-              />
+              <RatingsFilter {...filterProps} />
             </Box>
           </Flex>
           {!rawItems ? <Loading /> : <TableList items={items} />}

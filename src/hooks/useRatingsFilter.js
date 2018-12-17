@@ -1,22 +1,25 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 
 const RATINGS = [1, 2, 3, 4, 5]
 
-function useRatingsFilter() {
-  const [state, setState] = useState(RATINGS)
+function useRatingsFilter(items) {
+  const [state, setState] = useState(RATINGS.slice(1, 4))
   const toggleFilter = item => {
     if (state.find(el => el === item))
       setState(state => state.filter(rating => rating !== item))
     else setState(state => [...state, item])
   }
-  const applyRatingFilter = (item, activeRatings) =>
-    activeRatings.find(el => el === item.rating)
+  const applyRatingsFilter = item => state.find(el => el === item.rating)
+  const filterResults = useMemo(
+    () => items && items.filter(applyRatingsFilter),
+    [items, state]
+  )
 
   return {
     options: RATINGS,
-    activeFilters: state,
+    active: state,
     toggleFilter,
-    applyRatingFilter,
+    filterResults,
   }
 }
 
