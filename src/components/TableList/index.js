@@ -5,6 +5,7 @@ import Flex from '../../elements/Flex'
 // Components
 import Header from './Header'
 import TableItem from './Item'
+import Empty from './Empty'
 
 // WARNING: THIS COMPONENT IS NOT GENERIC
 // due to time constraints, this components is tightly couple
@@ -22,7 +23,7 @@ function TableList({ items, renderItem }) {
       data-testid="table-list"
     >
       <Header fields={['rating', 'comment', 'browser', 'device', 'platform']} />
-      {items.map(renderItem)}
+      {items.length ? items.map(renderItem) : <Empty />}
     </Flex>
   )
 }

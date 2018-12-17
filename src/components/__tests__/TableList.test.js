@@ -61,6 +61,11 @@ describe('TableList', () => {
 
     expect(container.firstChild).toMatchSnapshot()
   })
+  it('empty state should match snapshot', () => {
+    const { container } = render(<TableList items={[]} />)
+
+    expect(container.firstChild).toMatchSnapshot()
+  })
   it('should render all items', () => {
     const { getAllByTestId } = render(<TableList items={ITEMS} />)
 
