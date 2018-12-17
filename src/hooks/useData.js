@@ -6,6 +6,17 @@ function getDevice(viewport) {
   else return 'Desktop'
 }
 
+function parsePlatform(platform) {
+  switch (true) {
+    case /Mac/.test(platform):
+      return platform.replace('Mac', 'Mac ')
+    case /Win/.test(platform):
+      return platform.replace('Win', 'Win ')
+    default:
+      return platform
+  }
+}
+
 function useData() {
   const [state, setState] = useState({ loading: true, error: null, data: null })
   const fetchData = async () => {
@@ -33,7 +44,10 @@ function useData() {
         state.data.items.map(item => ({
           id: item.id,
           comment: item.comment,
-          computed_browser: item.computed_browser,
+          computed_browser: {
+            ...item.computed_browser,
+            Platform: parsePlatform(item.computed_browser.Platform),
+          },
           computed_location: item.computed_location,
           geo: item.geo,
           rating: item.rating,
